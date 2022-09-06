@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginVertical="8dp"
+    android:layout_margin="9dp"
+    android:backgroundTint="@color/colorPrimary"
+    android:background="@drawable/rounded_corner">
+
+    <TextView
+        android:id="@+id/note_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note Title"
+        android:fontFamily="@font/raleway"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginVertical="4dp"/>
+
+    <TextView
+        android:id="@+id/note_content_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway"
+        android:text="This is the note content "
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:maxLines="2"
+        android:layout_marginVertical="4dp"/>
+
+    <TextView
+        android:id="@+id/note_timestamp_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note Timestamp"
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:fontFamily="@font/raleway"
+        android:textSize="12sp"
+        android:layout_marginVertical="4dp"/>
+
+</LinearLayout>

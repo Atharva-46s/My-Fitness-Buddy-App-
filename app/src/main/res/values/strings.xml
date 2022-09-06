@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Trail 4</string>
+    <string name="hello">Hello</string>
+    <string name="john">John</string>
+    <string name="goals">goals</string>
+    <string name="finance">finance</string>
+    <string name="health">health</string>
+    <string name="comfort">comfort</string>
+    <string name="trending">trending</string>
+    <string name="dummy_text">Lorem ipsum is simplt dummy text of</string>
+    <string name="home">home</string>
+    <string name="favourite">favourite</string>
+    <string name="account">account</string>
+    <string name="settings">settings</string>
+    <string name="stark_atharva">STARK Atharva</string>
+    <string name="stark">STARK</string>
+    <string name="welcome_to_my_fitness_buddy">Welcome To My Fitness Buddy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
