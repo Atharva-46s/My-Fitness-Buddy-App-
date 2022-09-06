@@ -33,10 +33,10 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.MyViewHolder
 
         Food food = list.get(position);
         holder.foodTitleTextView.setText(food.getFood());
-        holder.caloriesTextView.setText(food.getCalories());
-        holder.carbohydratesTextView.setText(food.getCarbohydrates());
-        holder.proteinTextView.setText(food.getProtein());
-        holder.fatTextView.setText(food.getFat());
+        holder.caloriesTextView.setText("CALORIES: "+food.getCalories());
+        holder.carbohydratesTextView.setText("CARBS: "+food.getCarbohydrates());
+        holder.proteinTextView.setText("PROTEIN: "+food.getProtein());
+        holder.fatTextView.setText("FAT: "+food.getFat());
     }
 
     @Override

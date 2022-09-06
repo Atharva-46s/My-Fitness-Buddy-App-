@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:backgroundTint="@color/bacckground"
+        android:backgroundTint="@color/white"
         android:src="@drawable/ic_note_add">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
