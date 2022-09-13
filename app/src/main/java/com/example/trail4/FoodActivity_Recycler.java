@@ -2,11 +2,15 @@ package com.example.trail4;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Window;
+import android.widget.EditText;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -23,12 +27,16 @@ public class FoodActivity_Recycler extends AppCompatActivity {
     FoodsAdapter foodsAdapter;
     ArrayList<Food> list;
 
+    EditText foodSearchBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_food_recycler);
+
+        foodSearchBar=findViewById(R.id.food_search_bar);
 
         recyclerView=findViewById(R.id.recycler_view_food);
         database= FirebaseDatabase.getInstance().getReference("food_nutrition");
@@ -56,5 +64,26 @@ public class FoodActivity_Recycler extends AppCompatActivity {
             }
         });
 
+//        foodSearchBar.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2
+//
+//            public void afterTextChanged(Editable editable) {
+//                filter(s.toString());
+//            }
+//        });
+
     }
+
+    void filter(String text){
+        ArrayList<Food> filterList= new ArrayList<>();
+        for (Food items : list){
+            if (items.getFood().toLowerCase().contains(text.toLowerCase())){
+                filterList.add(items);
+            }
+        }
+
+    }
+
+
 }

@@ -23,6 +23,21 @@
             android:textSize="32sp"
             android:textStyle="bold" />
 
+        <EditText
+            android:id="@+id/food_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Search Food ....."
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:drawablePadding="4dp"
+            android:background="@drawable/cardbackground"
+            android:layout_below="@id/food_page_title"/>
+
+
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView

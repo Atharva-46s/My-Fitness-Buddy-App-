@@ -17,6 +17,7 @@ public class dashboard extends AppCompatActivity {
 
     ImageView menuBtn2;
     TextView foodNutritionFunctionalityTextView;
+//    MenuItem account;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,10 @@ public class dashboard extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
         setContentView(R.layout.dashboard);
+
+//        account=findViewById(R.id.menuAccount);
+
+
 
         menuBtn2=findViewById(R.id.imageMenu);
         menuBtn2.setOnClickListener((v)->showMenu());

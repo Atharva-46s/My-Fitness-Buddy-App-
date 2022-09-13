@@ -59,4 +59,5 @@ public class FoodsAdapter extends RecyclerView.Adapter<FoodsAdapter.MyViewHolder
         }
     }
 
+
 }
